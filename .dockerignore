@@ -1,3 +1,6 @@
+# dockerignore will ignore these files or path to be included into the docker container.
+# ignore stuffs like database. 
+
 # Git
 .git
 .gitignore

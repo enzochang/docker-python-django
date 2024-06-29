@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3.11'
 
 services:
   app:  
@@ -8,4 +8,12 @@ services:
       - 8000:8000
     volumes:
       - ./app:/app
+    environment:
+      - SECRET_KEY=django-insecure-zhz-l_^#$ji2@ap*!_p0&8!#h!e0=6u9@gmh-zv)@b^udu3+gc
+      - DEBUG=1
+
+db:
+  image: postgres:13-alpine
+  environment:
+    - POSTGRES_DB=
   
