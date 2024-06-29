@@ -15,5 +15,10 @@ services:
 db:
   image: postgres:13-alpine
   environment:
-    - POSTGRES_DB=
+    - MYSQL_DB=pydev
+    - MYSQL_USER=pydev
+    - MYSQL_PASS=jvbvxd99
+    - MYSQL_HOST=localhost
+  depends_on:
+    - db
   
